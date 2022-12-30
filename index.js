@@ -132,6 +132,7 @@ const getData = async () => {
                 results.appendChild(div)
                 document.getElementById("post-offices").style.display = 'none'
                     }
+                    
                 })
                 
             })
