@@ -103,9 +103,9 @@ const getData = async () => {
             const searchValue = document.getElementById("search-term")
             PostOfficeArray.forEach((office)=>{
                 search.addEventListener("click",()=>{
-                    if(office.Name.includes(searchValue.value)){
-                        console.log(searchValue.value)
-                        console.log(office.Name)
+                    if(office.Name.includes(searchValue.value)||office.BranchType.includes(searchValue.value)){
+                        // console.log(searchValue.value)
+                        // console.log(office.Name)
                         let results = document.getElementById("results")
                 const div = document.createElement('div')
                 div.classList.add("postoffice-box")
